@@ -13,11 +13,6 @@
 ActiveRecord::Schema.define(version: 20161025140349) do
 
   create_table "photos", force: :cascade do |t|
-    t.string   "type"
-    t.string   "name"
-    t.integer  "user_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
@@ -26,8 +21,8 @@ ActiveRecord::Schema.define(version: 20161025140349) do
 
   create_table "pictures", force: :cascade do |t|
     t.string   "name"
-    t.string   "key"
-    t.integer  "temp_type"
+    t.integer  "user_id"
+    t.integer  "type"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "photo_file_name"

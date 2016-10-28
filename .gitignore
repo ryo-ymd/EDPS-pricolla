@@ -1,0 +1,16 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/pricolla/db/*.sqlite3
+/pricolla//db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/pricolla/log/*
+!/log/.keep
+/pricolla/tmp
+.DS_Store
+/pricolla/.DS_Store/*
+/.DS_Store
+secret.key
+public/assets

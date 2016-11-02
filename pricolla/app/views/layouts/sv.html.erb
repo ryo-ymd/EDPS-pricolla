@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
+  <%= stylesheet_link_tag "sv", :media => "all" %>
   <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv-printshiv.min.js"></script>
   <title>Shadowverse</title>
 </head>
@@ -13,7 +13,7 @@
 <body>
 <!--シャドウバースのフレーム-->
 <div class="sv_frame">
-  <img src="images/sv_frame.png">
+  <%= image_tag 'sv_frame.png' %>
 </div>
 <!---->
 
@@ -43,7 +43,7 @@
 
 <!--フレームの画像-->
 <div class="sv_frame_img">
-  <img src="images/ebi.jpg">
+  <%= image_tag @picture.photo.url %>
 </div>
 <!---->
 

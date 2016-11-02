@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
+  <%= stylesheet_link_tag "dq", :media => "all" %>
   <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv-printshiv.min.js"></script>
   <title>ドラゴンクエスト</title>
 </head>
@@ -13,31 +13,31 @@
 <body>
 <!--ドラゴンクエストのフレーム-->
 <div class="dq_frame">
-  <img src="images/dq_frame.png">
+  <%= image_tag 'dq_frame.png' %>
 </div>
 <!---->
 
 <!--フレームの画像-->
 <div class="dq_frame_img">
-  <img src="images/gaga.jpg">
+  <%= image_tag @picture.photo.url %>
 </div>
 <!---->
 
 <!--フレームの名前-->
 <div class="dq_frame_name">
-  <p>ガガチャイ</p>
+  <p>あやねる</p>
 </div>
 <!---->
 
 <!--職業-->
 <div class="dq_job">
-  <p>大学生</p>
+  <p>せいゆう</p>
 </div>
 <!---->
 
 <!--性別-->
 <div class="dq_sex">
-  <p>おとこ</p>
+  <p>おんな</p>
 </div>
 <!---->
 
@@ -97,8 +97,7 @@
 
 <!--説明文-->
 <div class="explain">
-  <p><span>うんこまん</span>が<span>ぶりぶり座衛門</span>と暮らしていたところ
-    なかまになった。</p>
+  <p>あやねる</p>
 </div>
 <!---->
 

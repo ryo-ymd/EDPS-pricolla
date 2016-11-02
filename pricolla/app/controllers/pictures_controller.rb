@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show]
-  before_action :auth, only: [:index, :show, :new]
+  before_action :auth, only: [:index, :show, :new, :sv, :pk, :dq]
 
   # GET /pictures
   # GET /pictures.json
@@ -12,13 +12,14 @@ class PicturesController < ApplicationController
   # GET /pictures/1.json
   def show
     type = @picture.temp_type
+    key = @picture.key
     case type
       when 0
-        render action: :sv and return
+        render layout: 'pk' and return
       when 1
-        render templete: 'pictures/pk' and return
+        render layout: 'dq' and return
       when 2
-        render templete: 'pictures/dq' and return
+        render layout: 'sv' and return
     end
     render :nothing and return
   end
@@ -34,6 +35,7 @@ class PicturesController < ApplicationController
 
   # GET /pictures/new
   def new
+    p 'a'
     @picture = Picture.new
   end
 
@@ -41,7 +43,7 @@ class PicturesController < ApplicationController
   # POST /pictures.json
   def create
     @picture = Picture.new(picture_params)
-
+    p 'b'
     respond_to do |format|
       if @picture.save
         format.html { redirect_to @picture, notice: 'Picture was successfully created.', params: @picture.key }
@@ -66,7 +68,7 @@ class PicturesController < ApplicationController
     end
 
     def auth
-      key = params[:key] ? params[:key] : @picture.key
+      key = params[:key]
       user = User.find_by(key: key)
       if user
         @user = user

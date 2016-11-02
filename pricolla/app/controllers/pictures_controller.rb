@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
-  before_action :set_picture, only: [:show]
+  before_action :set_picture, only: [:show, :img]
   before_action :auth, only: [:index, :show, :new, :sv, :pk, :dq]
 
   # GET /pictures
@@ -25,6 +25,10 @@ class PicturesController < ApplicationController
   end
 
   def sv
+  end
+
+  def img
+    kit = IMGKit.new(picture_path(@picture, key: params[:key]))
   end
 
   def pk

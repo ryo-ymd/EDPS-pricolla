@@ -4,8 +4,8 @@
 /*フォント*/
 @font-face {
     font-family: 'hannari';
-    src: url(font/hannari.eot) format('embedded-opentype');
-    src: url(font/hannari.otf) format('opentype');
+    src: url('fonts/hannari.eot') format('embedded-opentype');
+    src: url('fonts/hannari.otf') format('opentype');
 }
 
 p {
@@ -220,7 +220,6 @@ body {
 .sv_power02 {
     top: 385px;
     left: 679px;
-    background-color: ;
     z-index: 4;
 }
 

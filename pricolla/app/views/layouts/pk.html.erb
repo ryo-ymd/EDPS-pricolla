@@ -25,44 +25,43 @@
 
 <!--ポケモンの番号-->
 <div class="pk_frame_num">
-  <p>002</p>
+  <p><%= @data[:num] %></p>
 </div>
 <!---->
 
 <!--ポケモンの名前-->
 <div class="pk_frame_name">
-  <p>パリピーン</p>
+  <p><%= @picture.name %></p>
 </div>
 <!---->
 
 <!--〜〜ポケモン-->
 <div class="pk_type">
-  <p>イカれた</p>
+  <p><%= @data[:type] %></p>
 </div>
 <!---->
 
 <!--たかさ-->
 <div class="pk_tall">
-  <p>1.71</p>
+  <p><%= @data[:tall] %></p>
 </div>
 <!---->
 
 <!--おもさ-->
 <div class="pk_weight">
-  <p>64</p>
+  <p><%= @data[:weight] %></p>
 </div>
 <!---->
 
 <!--あしあと-->
 <div class="asiato">
-  <%= image_tag 'ashiato3' %>
+  <%= image_tag "ashiato#{@data[:ashi]}" %>
 </div>
 <!---->
 
 <!--説明文-->
 <div class="explain">
-  <p>なんくるないさーはいくるしーさーくるしーさーなんくるないさー
-    はいくるしーさーくるしーさーなんくるないさーはいくるしーさーくるしーさー</p>
+  <p><%= @data[:text] %></p>
 </div>
 <!---->
 

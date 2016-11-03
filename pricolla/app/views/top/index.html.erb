@@ -1,0 +1,6 @@
+<h1>Pricolla</h1>
+<%= form_tag({controller: "pictures", action: "index"}, {:method=>"get"}) do %>
+秘密のキーを入力<br />
+<input name="key"/>
+<%= submit_tag "移動！"%>
+<% end %>

@@ -10,6 +10,6 @@ class CreateUserController < ApplicationController
   private
 
   def auth
-    throw(:abort)
+    throw(:abort) unless params[:auth] == 'edps114514'
   end
 end

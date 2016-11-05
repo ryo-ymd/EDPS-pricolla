@@ -5,6 +5,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( pk.scss )
 Rails.application.config.assets.precompile += %w( sv.scss )
 Rails.application.config.assets.precompile += %w( dq.scss )
+Rails.application.config.assets.precompile += %w( ds.scss )
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path

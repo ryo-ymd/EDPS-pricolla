@@ -13,7 +13,7 @@
 <body>
 <!--デレステのフレーム-->
 <div class="ds_frame">
-  <%= image_tag 'ds_frame.png' %>
+  <%= image_tag 'deresute.png' %>
 </div>
 <!---->
 
@@ -26,7 +26,7 @@
 
 <!--フレームの画像-->
 <div class="ds_frame_img">
-  <img src="images/ebi.jpg">
+  <%= image_tag @picture.photo.url %>
 </div>
 <!---->
 
@@ -34,19 +34,19 @@
 
 <!--ボーカル-->
 <div class="ds_vocal">
-  <p>3684</p>
+  <p><%= @data[:vocal] %></p>
 </div>
 <!---->
 
 <!--ダンス-->
 <div class="ds_dance">
-  <p>2350</p>
+  <p><%= @data[:dance] %></p>
 </div>
 <!---->
 
 <!--ビジュアル-->
 <div class="ds_visual">
-  <p>5488</p>
+  <p><%= @data[:visual] %></p>
 </div>
 <!---->
 
@@ -55,34 +55,28 @@
 
 <!--本人の名前-->
 <div class="ds_name">
-  <p>[焼肉キングダム]えびちゃん＋</p>
+  <p>[<%= @data[:nickname] %>]<%= @picture.name %><%= @data[:plus] %></p>
 </div>
 <!---->
 
 <!--センター効果-->
 <div class="ds_center">
-  <p>肉食アイドルのビジュアルアピール値を90％アップ</p>
+  <p><%= @data[:center] %></p>
 </div>
 <!---->
 
 <!--特技-->
 <div class="ds_skill">
-  <p>4秒毎、高確率で一瞬の間、PERFECT/GREATのスコア17％アップ</p>
+  <p><%= @data[:skill] %></p>
 </div>
 <!---->
 
 
 　<!--特技-->
 <div class="ds_lines">
-  <p>みんなに届け！えびたんハートっ♪おいしいお肉のジューシーなアイドルですっ！
-    これからもずっとずっと、幸せな時間を、私と一緒に過ごしましょうねっ！</p>
+  <p><%= @data[:text] %></p>
 </div>
 <!---->
-
-
-
-
-<div>
 
 </body>
 </html>

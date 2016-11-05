@@ -19,25 +19,25 @@
 
 <!--コスト-->
 <div class="sv_cost">
-  <h1>6</h1>
+  <h1><%= @data[:cost] %></h1>
 </div>
 <!---->
 
 <!--攻撃力-->
 <div class="sv_at">
-  <h1>9</h1>
+  <h1><%= @data[:at] %></h1>
 </div>
 <!---->
 
 <!--体力-->
 <div class="sv_hp">
-  <h1>8</h1>
+  <h1><%= @data[:hp] %></h1>
 </div>
 <!---->
 
 <!--フレームの名前-->
 <div class="sv_frame_name">
-  <p>二つ名/自分の名前</p>
+  <p><%= @data[:nickname] %>/<%= @picture.name %></p>
 </div>
 <!---->
 
@@ -49,49 +49,49 @@
 
 <!--説明欄の名前-->
 <div class="sv_name">
-  <p>クリスタリアプリンセス・ティア</p>
+  <p><%= @picture.name %></p></p>
 </div>
 <!---->
 
 <!--説明欄のクラス-->
 <div class="sv_class">
-  <p>ウィッチ</p>
+  <p><%= @data[:class] %></p>
 </div>
 <!---->
 
 <!--説明欄の進化前攻撃力-->
 <div class="sv_be_at">
-  <h1>9</h1>
+  <h1><%= @data[:at] %></h1>
 </div>
 <!---->
 
 <!--説明欄の進化後攻撃力-->
 <div class="sv_af_at">
-  <h1>10</h1>
+  <h1><%= @data[:hp] %></h1>
 </div>
 <!---->
 
 <!--説明欄の進化前体力-->
 <div class="sv_be_hp">
-  <h1>8</h1>
+  <h1><%= @data[:at_af] %></h1>
 </div>
 <!---->
 
 <!--説明欄の進化後体力-->
 <div class="sv_af_hp">
-  <h1>9</h1>
+  <h1><%= @data[:hp_af] %></h1>
 </div>
 <!---->
 
 <!--説明欄の能力 1-->
 <div class="sv_power01">
-  <p><span>ファンファーレ</span>　<span>焼けた肉</span>を2枚出す。</p>
+  <p><span><%= @data[:ability] %></span>　<%= @data[:cont] %></p>
 </div>
 <!---->
 
 <!--説明欄の能力 2-->
 <div class="sv_power02">
-  <p>守護</p>
+  <p><%= @data[:sec_ability] %></p>
 </div>
 <!---->
 

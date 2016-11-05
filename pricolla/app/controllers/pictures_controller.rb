@@ -83,6 +83,8 @@ class PicturesController < ApplicationController
         render layout: 'dq' and return
       when 2
         render layout: 'sv' and return
+      when 3
+        render layout: 'ds' and return
     end
     render :nothing and return
   end

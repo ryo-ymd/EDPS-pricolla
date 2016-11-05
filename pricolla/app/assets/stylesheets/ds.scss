@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+
+/*フォント*/
+@font-face {
+  font-family: 'bokutachi';
+  src: url('font/Boku2-Bold.otf') format('opentype');
+}
+
+p {
+  font-family: 'bokutachi';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*アブソリュート*/
+.ds_frame, .ds_frame_name, .ds_frame_img, .ds_vocal, .ds_dance, .ds_visual, .ds_name, .ds_center, .ds_skill,
+.ds_lines {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+/*フレーム*/
+.ds_frame {
+  z-index: 3;
+}
+
+
+
+
+/*フレームの画像*/
+.ds_frame_img {
+  top: 111px;
+  left: 238px;
+  z-index: 4;
+}
+
+.ds_frame_img img {
+  margin: 0;
+  padding: 0;
+  height: 289px;
+  width: 233px;
+}
+
+
+/*ステータス数字*/
+.ds_vocal {
+  top: 137px;
+  left: 1036px;
+  width: 500px;
+  z-index: 4;
+}
+
+.ds_dance {
+  top: 177px;
+  left: 788px;
+  width: 500px;
+  z-index: 4;
+}
+
+.ds_visual {
+  top: 200px;
+  left: 1036px;
+  width: 500px;
+  z-index: 4;
+}
+
+
+.ds_vocal, .ds_dance, .ds_visual p {
+  margin: 0;
+  padding: 0;
+  color: #fdfdfd;
+  letter-spacing: 2px;
+  font-size: 22px;
+  z-index: 4;
+}
+
+
+/*本人の名前*/
+.ds_name {
+  top: 54px;
+  left:360px;
+  width: 500px;
+  z-index: 4;
+}
+
+.ds_name p {
+  margin: 0;
+  padding: 0;
+  color: #fdfdfd;
+  letter-spacing: 2px;
+  font-size: 26px;
+  z-index: 4;
+}
+
+
+/*センター効果*/
+
+.ds_center {
+  top: 356px;
+  left: 679px;
+  background-color: ;
+  width: 470px;
+  z-index: 4;
+
+}
+
+
+.ds_center p {
+  margin: 0;
+  padding: 0;
+  color: #fdfdfd;
+  letter-spacing: 2px;
+  line-height: 44px;
+  font-size: 22px;
+  z-index: 4;
+}
+
+
+
+/*特技*/
+
+.ds_skill {
+  top: 476px;
+  left: 679px;
+  background-color: ;
+  width: 470px;
+  z-index: 4;
+}
+
+
+.ds_skill p {
+  margin: 0;
+  padding: 0;
+  color: #fdfdfd;
+  letter-spacing: 2px;
+  line-height: 42px;
+  font-size: 22px;
+  z-index: 4;
+}
+
+/*台詞*/
+
+.ds_lines {
+  top: 420px;
+  left: 195px;
+  background-color: ;
+  width: 455px;
+  z-index: 4;
+}
+
+
+.ds_lines p {
+  margin: 0;
+  padding: 0;
+  color: #fdfdfd;
+  letter-spacing: 2px;
+  line-height: 28px;
+  font-size: 22px;
+  z-index: 4;
+}

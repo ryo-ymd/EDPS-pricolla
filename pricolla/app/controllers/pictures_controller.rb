@@ -108,7 +108,7 @@ class PicturesController < ApplicationController
 
   # GET /pictures/new
   def new
-    @picture = Picture.new
+    @picture = Picture.new(key: params[:key])
   end
 
   # POST /pictures

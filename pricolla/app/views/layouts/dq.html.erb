@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <%= stylesheet_link_tag "dq", :media => "all" %>
+  <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv-printshiv.min.js"></script>
+  <title>ドラゴンクエスト</title>
+</head>
+
+<body>
+<!--ドラゴンクエストのフレーム-->
+<div class="dq_frame">
+  <%= image_tag 'dq_frame.png' %>
+</div>
+<!---->
+
+<!--フレームの画像-->
+<div class="dq_frame_img">
+  <%= image_tag @picture.photo.url %>
+</div>
+<!---->
+
+<!--フレームの名前-->
+<div class="dq_frame_name">
+  <p><%= @picture.name %></p>
+</div>
+<!---->
+
+<!--職業-->
+<div class="dq_job">
+  <p><%= @data[:job] %></p>
+</div>
+<!---->
+
+<!--性別-->
+<div class="dq_sex">
+  <p><%= @data[:sex] %></p>
+</div>
+<!---->
+
+<!--レベル-->
+<div class="dq_level">
+  <p><%= @data[:lv] %></p>
+</div>
+<!---->
+
+<!--HP-->
+<div class="hp">
+  <p><%= @data[:hp] %></p>
+</div>
+<!---->
+
+<!--MP-->
+<div class="mp">
+  <p><%= @data[:mp] %></p>
+</div>
+<!---->
+
+<!--ちから-->
+<div class="power">
+  <p><%= @data[:power] %></p>
+</div>
+<!---->
+
+<!--すばやさ-->
+<div class="speed">
+  <p><%= @data[:speed] %></p>
+</div>
+<!---->
+
+<!--たいりょく-->
+<div class="pp">
+  <p><%= @data[:pp] %></p>
+</div>
+<!---->
+
+<!--かしこさ-->
+<div class="clever">
+  <p><%= @data[:clever] %></p>
+</div>
+<!---->
+
+<!--かしこさ-->
+<div class="lucky">
+  <p><%= @data[:lucky] %></p>
+</div>
+<!---->
+
+<!--EXP-->
+<div class="exp">
+  <p><%= @data[:exp] %></p>
+</div>
+<!---->
+
+<!--説明文-->
+<div class="explain">
+  <p><%= @data[:text] %></p>
+</div>
+<!---->
+
+
+
+</body>
+</html>

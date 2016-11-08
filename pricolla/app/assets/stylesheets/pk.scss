@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+
+/*フォント*/
+@font-face {
+    font-family: 'PixelMplus';
+    src: url('fonts/PixelMplus10-Regular.eot') format('embedded-opentype');
+    src: url('fonts/PixelMplus10-Regular.otf') format('opentype');
+}
+
+p {
+    font-family: 'PixelMplus';
+    color: transparent;
+    text-shadow: 0px 0px 2.8px #555;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*アブソリュート*/
+.pk_frame, .pk_frame_name, .pk_frame_num, .pk_frame_img, .pk_type, .pk_tall, .pk_weight, .asiato,
+.explain {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*ポケモンのフレーム*/
+.pk_frame {
+    z-index: 3;
+}
+
+.pk_frame img {
+    height: 750px;
+}
+
+
+/*フレームの画像*/
+.pk_frame_img {
+    top: 127px;
+    left: 101px;
+    z-index: 2;
+}
+
+.pk_frame_img img {
+    margin: 0;
+    padding: 0;
+    height: 273px;
+}
+
+
+/*ポケモンの番号*/
+.pk_frame_num {
+    top: 120px;
+    left: 494px;
+    width: 220px;
+    text-align: left;
+    z-index: 4;
+}
+
+.pk_frame_num p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-size: 56px;
+
+    z-index: 4;
+}
+
+
+/*ポケモンの名前*/
+.pk_frame_name {
+    top: 126px;
+    left: 608px;
+    width: 220px;
+    text-align: left;
+    z-index: 4;
+}
+
+.pk_frame_name p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+    font-size: 44px;
+
+    z-index: 4;
+}
+
+
+/*〜〜ポケモン*/
+.pk_type {
+    top: 200px;
+    left: 430px;
+    width: 240px;
+    text-align: right;
+    z-index: 4;
+}
+
+.pk_type p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 44px;
+    z-index: 4;
+}
+
+
+/*たかさ*/
+.pk_tall {
+    top: 268px;
+    left: 562px;
+    width: 226px;
+    text-align: right;
+    z-index: 4;
+}
+
+.pk_tall p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 62px;
+    font-weight: normal;
+    z-index: 4;
+}
+
+
+/*おもさ*/
+.pk_weight {
+    top: 344px;
+    left: 562px;
+    width: 226px;
+    text-align: right;
+    z-index: 4;
+}
+
+.pk_weight p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 62px;
+    font-weight: normal;
+    z-index: 4;
+}
+
+
+/*あしあと*/
+.asiato {
+    top: 315px;
+    left: 938px;
+    width: 70px;
+    text-align: center;
+    z-index: 4;
+}
+
+.asiato img {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 30px;
+    z-index: 4;
+    height: 50px;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+
+/*説明文*/
+.explain {
+    top: 468px;
+    left: 90px;
+    width: 942px;
+    z-index: 4;
+}
+
+.explain p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: 64px;
+    font-size: 42px;
+    font-weight: normal;
+    z-index: 4;
+}

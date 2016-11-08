@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <%= stylesheet_link_tag "pk", :media => "all" %>
+  <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv-printshiv.min.js"></script>
+  <title>ポケモン</title>
+</head>
+
+<body>
+<!--ポケモンのフレーム-->
+<div class="pk_frame">
+  <%= image_tag 'pk_frame.png' %>
+</div>
+<!---->
+
+<!--フレームの画像-->
+<div class="pk_frame_img">
+  <%= image_tag @picture.photo.url %>
+</div>
+<!---->
+
+<!--ポケモンの番号-->
+<div class="pk_frame_num">
+  <p><%= @data[:num] %></p>
+</div>
+<!---->
+
+<!--ポケモンの名前-->
+<div class="pk_frame_name">
+  <p><%= @picture.name %></p>
+</div>
+<!---->
+
+<!--〜〜ポケモン-->
+<div class="pk_type">
+  <p><%= @data[:type] %></p>
+</div>
+<!---->
+
+<!--たかさ-->
+<div class="pk_tall">
+  <p><%= @data[:tall] %></p>
+</div>
+<!---->
+
+<!--おもさ-->
+<div class="pk_weight">
+  <p><%= @data[:weight] %></p>
+</div>
+<!---->
+
+<!--あしあと-->
+<div class="asiato">
+  <%= image_tag "ashiato#{@data[:ashi]}" %>
+</div>
+<!---->
+
+<!--説明文-->
+<div class="explain">
+  <p><%= @data[:text] %></p>
+</div>
+<!---->
+
+
+
+
+
+</body>
+</html>

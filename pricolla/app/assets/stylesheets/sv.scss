@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+
+/*フォント*/
+@font-face {
+    font-family: 'hannari';
+    src: url('fonts/hannari.eot') format('embedded-opentype');
+    src: url('fonts/hannari.otf') format('opentype');
+}
+
+p {
+    font-family: 'hannari';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*アブソリュート*/
+.sv_frame, .sv_frame_name, .sv_frame_img, .sv_class, .sv_name, .sv_power01, .sv_power02,
+.sv_cost, .sv_at, .sv_hp, .sv_be_at, .sv_af_at, .sv_be_hp, .sv_af_hp {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+/*シャドウバースのフレーム*/
+.sv_frame {
+    z-index: 3;
+}
+
+
+/*フレームのコスト・攻撃力・体力*/
+.sv_cost {
+    top: 76px;
+    left: 72px;
+    width: 100px;
+    text-align: center;
+    z-index: 4;
+}
+
+.sv_at {
+    top: 530px;
+    left: 79px;
+    width: 100px;
+    text-align: center;
+    z-index: 4;
+}
+
+.sv_hp {
+    top: 528px;
+    left: 418px;
+    width: 100px;
+    text-align: center;
+    z-index: 4;
+}
+
+.sv_cost h1, .sv_at h1, .sv_hp h1 {
+    font-size: 95px;
+    letter-spacing: -7px;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    color: #C8C8C8;
+}
+
+.sv_cost h1 {
+    -webkit-text-stroke: 2.5px #024A1C;
+}
+
+.sv_at h1 {
+    -webkit-text-stroke: 2.5px #000080;
+}
+
+.sv_hp h1 {
+    -webkit-text-stroke: 2.5px #8B0000;
+}
+
+
+/*フレームの名前*/
+.sv_frame_name {
+    top:187px;
+    left: 180px;
+    width: 280px;
+    text-align: center;
+    z-index: 4;
+}
+
+.sv_frame_name p {
+    margin: 0;
+    padding: 0;
+    color: #DCDCDC;
+    letter-spacing: 2px;
+    font-size: 18px;
+    z-index: 4;
+}
+
+
+/*フレームの画像*/
+.sv_frame_img {
+    top: 200px;
+    left: 137px;
+    z-index: 2;
+}
+
+.sv_frame_img img {
+    margin: 0;
+    padding: 0;
+    height: 442px;
+}
+
+
+/*説明欄のクラス*/
+.sv_class {
+    top: 174px;
+    left: 760px;
+    width: 500px;
+    z-index: 4;
+}
+
+.sv_class p {
+    margin: 0;
+    padding: 0;
+    color: #DCDCDC;
+    letter-spacing: 2px;
+    font-size: 23px;
+    z-index: 4;
+}
+
+
+/*説明欄の名前*/
+.sv_name {
+    top: 112px;
+    left: 760px;
+    width: 500px;
+    z-index: 4;
+}
+
+.sv_name p {
+    margin: 0;
+    padding: 0;
+    color: #DCDCDC;
+    letter-spacing: 2px;
+    font-size: 30px;
+    z-index: 4;
+}
+
+
+/*説明欄の攻撃力・体力*/
+.sv_be_at {
+    top: 246px;
+    left: 1068px;
+    width: 100px;
+    text-align: center;
+    z-index: 4;
+}
+
+.sv_af_at {
+    top: 246px;
+    left: 1152px;
+    width: 100px;
+    text-align: center;
+    z-index: 4;
+}
+
+.sv_be_hp {
+    top: 424px;
+    left: 1068px;
+    width: 100px;
+    text-align: center;
+    z-index: 4;
+}
+
+.sv_af_hp {
+    top: 424px;
+    left: 1152px;
+    width: 100px;
+    text-align: center;
+    z-index: 4;
+}
+
+.sv_be_at h1, .sv_af_at h1, .sv_be_hp h1, .sv_af_hp h1 {
+    font-size: 28px;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    color: #DCDCDC;
+}
+
+
+/*説明欄の能力 1*/
+.sv_power01 {
+    top: 316px;
+    left: 679px;
+    width: 547px;
+    z-index: 4;
+}
+
+.sv_power01 span {
+    margin: 0;
+    padding: 0;
+    height: 23px;
+    color: #FFCC00;
+    letter-spacing: 2px;
+    font-size: 19px;
+    line-height: 34px;
+    border-bottom: 1px solid #FFCC00;
+    z-index: 4;
+}
+
+.sv_power01 p {
+    margin: 0;
+    padding: 0;
+    color: #DCDCDC;
+    letter-spacing: 2px;
+    font-size: 19px;
+    line-height: 34px;
+    z-index: 4;
+}
+
+
+/*説明欄の能力 2*/
+.sv_power02 {
+    top: 385px;
+    left: 679px;
+    z-index: 4;
+}
+
+.sv_power02 p {
+    margin: 0;
+    padding: 0;
+    height: 23px;
+    color: #FFCC00;
+    letter-spacing: 2px;
+    font-size: 19px;
+    border-bottom: 1px solid #FFCC00;
+    z-index: 4;
+}

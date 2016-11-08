@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="title">あなたの図鑑</h1>
+
+<table class="table is-striped">
+  <thead>
+    <tr>
+      <th>登録名</th>
+      <th>作者</th>
+      <th>タイプ</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pictures.each do |picture| %>
+      <tr>
+        <td><%= picture.name %></td>
+        <td><%= picture.key %></td>
+        <td><%= temp_type picture.temp_type %></td>
+        <td><%= link_to '表示する！', picture_path(picture, key: picture.key), class: "button  is-info" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to '新しい図鑑を作成する！', new_picture_path(key: params[:key]), class: "button is-primary" %>
+
+<br>

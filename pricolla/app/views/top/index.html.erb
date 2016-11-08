@@ -1,0 +1,12 @@
+<h1 class="title">Pricolla</h1>
+
+<div class="notification">
+  2016年鳳祭 EDPSの出し物のページです。<br>
+  このページは11/7に停止しますので、保存などはお早めに！
+</div>
+
+<%= form_tag({controller: "pictures", action: "index"}, {:method=>"get"}) do %>
+秘密のキーを入力<br />
+<input name="key" class="input"/>
+<%= submit_tag "移動！", class: "button"%>
+<% end %>

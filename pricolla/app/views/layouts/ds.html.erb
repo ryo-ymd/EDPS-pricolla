@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <%= stylesheet_link_tag "ds", media: 'all' %>
+  <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv-printshiv.min.js"></script>
+  <title>Deresute</title>
+</head>
+
+<body>
+<!--デレステのフレーム-->
+<div class="ds_frame">
+  <%= image_tag 'deresute.png' %>
+</div>
+<!---->
+
+
+<!--フレームの名前-->
+<div class="ds_frame_name">
+  <p></p>
+</div>
+<!---->
+
+<!--フレームの画像-->
+<div class="ds_frame_img">
+  <%= image_tag @picture.photo.url %>
+</div>
+<!---->
+
+
+
+<!--ボーカル-->
+<div class="ds_vocal">
+  <p><%= @data[:vocal] %></p>
+</div>
+<!---->
+
+<!--ダンス-->
+<div class="ds_dance">
+  <p><%= @data[:dance] %></p>
+</div>
+<!---->
+
+<!--ビジュアル-->
+<div class="ds_visual">
+  <p><%= @data[:visual] %></p>
+</div>
+<!---->
+
+
+
+
+<!--本人の名前-->
+<div class="ds_name">
+  <p>[<%= @data[:nickname] %>]<%= @picture.name %><%= @data[:plus] %></p>
+</div>
+<!---->
+
+<!--センター効果-->
+<div class="ds_center">
+  <p><%= @data[:center] %></p>
+</div>
+<!---->
+
+<!--特技-->
+<div class="ds_skill">
+  <p><%= @data[:skill] %></p>
+</div>
+<!---->
+
+
+　<!--特技-->
+<div class="ds_lines">
+  <p><%= @data[:text] %></p>
+</div>
+<!---->
+
+</body>
+</html>

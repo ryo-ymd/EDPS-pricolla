@@ -1,0 +1,36 @@
+<%= form_for(picture) do |f| %>
+  <% if picture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(picture.errors.count, "error") %> prohibited this picture from being saved:</h2>
+
+      <ul>
+      <% picture.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "登録名", class: "label"%>
+    <%= f.text_field :name, class: "input" %>
+  </div>
+
+  <div class="field">
+    <%= f.label "秘密のキー", class: "label" %>
+    <%= f.text_field :key, class: "input" %>
+  </div>
+
+  <div class="field">
+    <%= f.label "テンプレート", class: "label" %>
+    <%= f.select :temp_type, [["ポケモン風", 0], ["ドラクエ風", 1], ["シャドバ風", 2], ["デレステ風", 3]] %>
+  </div>
+
+  <div class="field">
+    <%= f.file_field :photo %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
